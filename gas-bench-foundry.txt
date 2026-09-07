@@ -1,0 +1,26 @@
+Compiler run successful!
+Ran 3 tests for test/GasBench.t.sol:GasBench
+[PASS] test_Gas_A_UncheckedCustomError() (gas: 304287)
+Logs:
+  [A] unchecked + custom error (= MyToken)
+    transfer COLD recipient : 27174
+    transfer WARM recipient : 3279
+  [A] unchecked + custom error
+    transfer REVERT (solde insuffisant): 1133
+    runtime bytecode size : 368
+[PASS] test_Gas_B_CheckedCustomError() (gas: 199344)
+Logs:
+  [B] checked (sans unchecked) + custom error
+    transfer COLD recipient : 27221
+    transfer WARM recipient : 3326
+    runtime bytecode size : 404
+[PASS] test_Gas_C_UncheckedRequireString() (gas: 352800)
+Logs:
+  [C] unchecked + require(string)
+    transfer COLD recipient : 27174
+    transfer WARM recipient : 3279
+  [C] unchecked + require(string)
+    transfer REVERT (solde insuffisant): 1185
+    runtime bytecode size : 489
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 319.83µs (281.71µs CPU time)
+Ran 1 test suite in 1.06ms (319.83µs CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)

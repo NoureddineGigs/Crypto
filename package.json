@@ -1,0 +1,33 @@
+{
+  "name": "tp1-erc20",
+  "version": "1.0.0",
+  "description": "TP1 Blockchain & Développement — Token ERC-20 from scratch (Hardhat + Foundry)",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:forge": "forge test -vv",
+    "test:all": "hardhat test && forge test -vv",
+    "coverage": "hardhat coverage",
+    "coverage:forge": "forge coverage --report summary --no-match-coverage test/",
+    "snapshot": "forge snapshot",
+    "gas:bench": "forge test --match-contract GasBench -vv",
+    "deploy:local": "hardhat run scripts/deploy.ts --network hardhat",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia"
+  },
+  "keywords": [],
+  "author": "Noureddine Bensadok",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.5.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.29.1",
+    "hardhat-gas-reporter": "^1.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
