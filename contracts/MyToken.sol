@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 import './IERC20.sol';
 
 /// @title MyToken — Token ERC-20 pédagogique
-/// @author Noureddine Bensadok — M2 AL, ESGI 2025-2026
+/// @author Noureddine Ben Sadok — M2 AL, ESGI 2025-2026
 /// @notice Implémentation complète de l'EIP-20 réalisée en TP1 (sans héritage OpenZeppelin)
 /// @dev Pattern CEI (Checks-Effects-Interactions) respecté partout ; erreurs custom
 ///      (moins de gas qu'un `require` avec chaîne) ; arithmétique `unchecked` uniquement

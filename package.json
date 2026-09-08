@@ -16,7 +16,7 @@
     "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia"
   },
   "keywords": [],
-  "author": "Noureddine Bensadok",
+  "author": "Noureddine Ben Sadok",
   "license": "MIT",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",

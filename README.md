@@ -1,7 +1,7 @@
 # TP1 — Token ERC-20 from scratch (Hardhat + Foundry)
 
 > Blockchain & Développement — M2 AL — ESGI 2025-2026
-> Auteur : **Noureddine Bensadok**
+> Auteur : **Noureddine Ben Sadok**
 
 Implémentation complète d'un token ERC-20 (`MyToken`, symbole `MTK`) **sans héritage OpenZeppelin**, avec :
 
