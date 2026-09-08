@@ -25,7 +25,9 @@ Tests dans deux paradigmes : **Hardhat / TypeScript / Chai** (24 tests) et **Fou
 | Snapshot gas Foundry | [`.gas-snapshot`](.gas-snapshot) |
 | Mesures Partie 6 | [`gas-bench-foundry.txt`](gas-bench-foundry.txt), [`gas-optimizer-runs.txt`](gas-optimizer-runs.txt), [`coverage-summary.txt`](coverage-summary.txt) |
 
-**Contrat déployé (Sepolia)** : _voir le rapport PDF / section ci-dessous une fois déployé._
+**Contrat déployé et vérifié sur Sepolia** : [`0xe0Fdc5391fCB9f6536088B7973529Bf8511Fb50F`](https://sepolia.etherscan.io/address/0xe0fdc5391fcb9f6536088b7973529bf8511fb50f#code) — tx de création [`0xc4fcb672…`](https://sepolia.etherscan.io/tx/0xc4fcb67266bdb5cb3bc982e4ebba21c350f594b226cb606a11fb470b9aa76f5a) (déployeur `0xa26fC1DC…dE4c9`, 1 000 000 MTK).
+
+**Repository** : https://github.com/NoureddineGigs/Crypto
 
 ---
 
@@ -43,8 +45,8 @@ Tests dans deux paradigmes : **Hardhat / TypeScript / Chai** (24 tests) et **Fou
 ## 2. Installation
 
 ```bash
-git clone <URL_DU_REPO> tp1-erc20
-cd tp1-erc20
+git clone https://github.com/NoureddineGigs/Crypto.git
+cd Crypto/tp1-erc20   # (ou la racine si le projet est à la racine du repo)
 npm install                       # Hardhat, toolbox, gas-reporter, dotenv, OpenZeppelin…
 git submodule update --init       # forge-std (lib/forge-std) — ou : forge install foundry-rs/forge-std --no-commit
 cp .env.example .env              # puis remplir RPC_URL_SEPOLIA / PRIVATE_KEY / ETHERSCAN_API_KEY
