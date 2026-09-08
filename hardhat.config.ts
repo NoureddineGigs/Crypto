@@ -21,7 +21,8 @@ const config: HardhatUserConfig = {
     },
   },
   etherscan: {
-    apiKey: { sepolia: process.env.ETHERSCAN_API_KEY ?? '' },
+    // Etherscan API v2 : une seule clé pour tous les réseaux (l'ancien format { sepolia: ... } est déprécié)
+    apiKey: process.env.ETHERSCAN_API_KEY ?? '',
   },
   gasReporter: {
     enabled: true,
