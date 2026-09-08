@@ -46,7 +46,7 @@ Tests dans deux paradigmes : **Hardhat / TypeScript / Chai** (24 tests) et **Fou
 
 ```bash
 git clone https://github.com/NoureddineGigs/Crypto.git
-cd Crypto/tp1-erc20   # (ou la racine si le projet est à la racine du repo)
+cd Crypto
 npm install                       # Hardhat, toolbox, gas-reporter, dotenv, OpenZeppelin…
 git submodule update --init       # forge-std (lib/forge-std) — ou : forge install foundry-rs/forge-std --no-commit
 cp .env.example .env              # puis remplir RPC_URL_SEPOLIA / PRIVATE_KEY / ETHERSCAN_API_KEY
